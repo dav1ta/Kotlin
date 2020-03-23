@@ -1,4 +1,3 @@
-import kotlin.reflect.jvm.internal.impl.load.kotlin.JvmType
 
 class Fraction (private var x: Int, private var y: Int) {
 
