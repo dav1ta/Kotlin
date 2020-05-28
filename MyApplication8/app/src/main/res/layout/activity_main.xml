@@ -20,7 +20,7 @@
 
         <EditText
             android:id="@+id/inputText"
-            android:layout_width="wrap_content"
+            android:layout_width="83dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
@@ -30,9 +30,16 @@
         <Button
             android:id="@+id/addBtn"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Add" />
+
+        <Button
+            android:id="@+id/clrBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CLEAR" />
 
     </LinearLayout>
 

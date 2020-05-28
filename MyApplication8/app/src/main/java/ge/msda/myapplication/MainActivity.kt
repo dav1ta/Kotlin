@@ -5,7 +5,9 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
+import android.util.Log
 import androidx.recyclerview.widget.GridLayoutManager
+import ge.msda.myapplication.db.NoteEntity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -25,7 +27,10 @@ class MainActivity : AppCompatActivity() {
 
             val input = inputText.text.toString()
 
+            var note = NoteEntity(0,input)
             if (!TextUtils.isEmpty(input)) {
+
+                App.instance.db.getNoteDao().insert(note)
 
                 addNote(input)
                 inputText.setText("")
@@ -33,6 +38,19 @@ class MainActivity : AppCompatActivity() {
 
             }
 
+        }
+
+
+
+        clrBtn.setOnClickListener {
+            inputText.setText("")
+            noteAdapter.updateNotes(ArrayList())
+            App.instance.db.getNoteDao().deleteAll()
+        }
+
+
+        App.instance.db.getNoteDao().getAllNotes().forEach { nt ->
+            Log.d("Mydata", nt.toString())
         }
 
     }
