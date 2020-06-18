@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "409520870498",
+    "firebase_url": "https://upheld-sublime-248607.firebaseio.com",
+    "project_id": "upheld-sublime-248607",
+    "storage_bucket": "upheld-sublime-248607.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409520870498:android:430e950a5eb9cae1feed3b",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "409520870498-quqg2jh3n4iitao63bjnmnuclfqrnj4p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "6ec917dac98791bb74ade5d17d3d9f63a6019831"
+          }
+        },
+        {
+          "client_id": "409520870498-fsuok4ftnej9oig70jqlqte5s9r1on2k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDplFbloCwtdXkR-7WR8HFYG9F2CceMlR4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "409520870498-fsuok4ftnej9oig70jqlqte5s9r1on2k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
